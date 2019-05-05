@@ -4,8 +4,8 @@
 
 Starting and Stopping Services
 
-sudo systemctl start application
-sudo systemctl stop application.service
+- sudo systemctl start application
+- sudo systemctl stop application.service
 sudo systemctl restart application.service
 sudo systemctl reload application.service
 
