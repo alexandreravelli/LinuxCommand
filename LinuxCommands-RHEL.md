@@ -1,4 +1,4 @@
-# LinuxCommand RHEL
+# LinuxCommands RHEL
 
 **/// Systemctl ///**
 
