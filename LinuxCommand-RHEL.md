@@ -32,4 +32,20 @@
 - sudo yum update --security
 - cat /etc/redhat-release
 
+**/// SELINUX ///**
+
+> Checking the Current Status & Mode of SELinux
+
+- sestatus
+
+> Temporarily Disable SELinux on CentOS 7
+
+- sudo setenforce 0 (permissive)
+- sudo setenforce 1 (enforcing)
+
+> Permanently Disable SELinux on CentOS 7
+
+- sudo nano /etc/selinux/config
+- to SELINUX=disabled
+
 uname -a / df -ah 
