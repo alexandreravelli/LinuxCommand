@@ -14,5 +14,8 @@
 - sudo systemctl enable application.service
 - sudo systemctl disable application.service
 
+> Checking the Status of Services
+
+- systemctl status application.service
 
 / crl c / uname -a / df -ah / netstat -tulpn
