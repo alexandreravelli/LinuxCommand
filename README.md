@@ -1,6 +1,6 @@
 # LinuxCommand
 
-**/// Systemctl ///*
+**/// Systemctl ///**
 
 > Starting and Stopping Services
 
@@ -18,7 +18,7 @@
 
 - systemctl status application.service
 
-*/// Network ///*
+**/// Network ///**
 
 - netstat
 - netstat -tulpn
