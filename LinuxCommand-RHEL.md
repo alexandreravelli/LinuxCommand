@@ -18,6 +18,8 @@
 
 - systemctl status application.service
 
+-----------------------------------------------------------
+
 **/// Network ///**
 
 - netstat
