@@ -18,4 +18,12 @@
 
 - systemctl status application.service
 
-uname -a / df -ah / netstat -tulpn
+*/// Network ///*
+
+- netstat
+- netstat -tulpn
+- ifconfig
+
+
+
+uname -a / df -ah 
