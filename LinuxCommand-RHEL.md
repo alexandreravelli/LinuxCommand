@@ -26,6 +26,8 @@
 - netstat -tulpn
 - ifconfig
 
+-----------------------------------------------------------
+
 **/// Manage OS updates ///**
 
 - sudo yum check-update
@@ -33,6 +35,9 @@
 - sudo yum update
 - sudo yum update --security
 - cat /etc/redhat-release
+
+-----------------------------------------------------------
+
 
 **/// SELINUX ///**
 
@@ -49,5 +54,8 @@
 
 - sudo nano /etc/selinux/config
 - to SELINUX=disabled
+
+-----------------------------------------------------------
+
 
 uname -a / df -ah 
