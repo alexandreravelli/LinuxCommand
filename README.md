@@ -18,4 +18,4 @@
 
 - systemctl status application.service
 
-/ crl c / uname -a / df -ah / netstat -tulpn
+uname -a / df -ah / netstat -tulpn
