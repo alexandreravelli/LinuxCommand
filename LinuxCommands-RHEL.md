@@ -86,7 +86,7 @@ in progress
 
 **/// VI ///**
 
-> Editer un fichier
+> Éditer un fichier
 
 - vi fichier.txt (e pour edit)
 
