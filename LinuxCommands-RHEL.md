@@ -100,8 +100,8 @@ in progress
 
 > Créer un utilisateur + mot de passe
 
-- adduser alex
-- passwd alex
+- adduser user
+- passwd user
 
 > Gestion des utilisateurs
 
