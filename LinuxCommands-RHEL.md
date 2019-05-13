@@ -68,7 +68,7 @@ in progress
 
 > Afficher le chemin d'accès
 
-pwd
+- pwd
 
 -----------------------------------------------------------
 
@@ -76,7 +76,7 @@ pwd
 
 > Créer un fichier
 
-touch fichier.txt
+- touch fichier.txt
 
 -----------------------------------------------------------
 
@@ -84,7 +84,7 @@ touch fichier.txt
 
 > Editer un fichier
 
-vi fichier.txt (e pour edit)
+- vi fichier.txt (e pour edit)
 
 -----------------------------------------------------------
 
@@ -92,7 +92,7 @@ vi fichier.txt (e pour edit)
 
 > Afficher les utilisateurs
 
-cat etc/passwd
+- cat etc/passwd
 
 > Créer un utilisateur + mot de passe
 
