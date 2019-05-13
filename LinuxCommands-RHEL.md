@@ -66,7 +66,7 @@ in progress
 
 **/// PWD ///**
 
------------------------------------------------------------
+> Afficher le chemin d'accès
 
 pwd
 
@@ -74,7 +74,7 @@ pwd
 
 **/// Touch ///**
 
------------------------------------------------------------
+> Créer un fichier
 
 touch fichier.txt
 
@@ -82,7 +82,7 @@ touch fichier.txt
 
 **/// VI ///**
 
------------------------------------------------------------
+> Editer un fichier
 
 vi fichier.txt (e pour edit)
 
