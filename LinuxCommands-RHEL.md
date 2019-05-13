@@ -103,6 +103,14 @@ in progress
 - adduser alex
 - passwd alex
 
+> Gestion des utilisateurs
+
+- usermod L user (Désactiver un compte)
+- usermod U user (Activer un compte)
+- usermod -g GroupLocal NomUser (Changer l'utilisateur de groupe)
+- usermod -aG GroupLocal NomUser (Changer l'utilisateur de groupe en gardant ces anciens groups)
+
+
 -----------------------------------------------------------
 
 uname -a / df -ah 
