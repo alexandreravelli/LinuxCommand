@@ -88,4 +88,14 @@ vi fichier.txt (e pour edit)
 
 -----------------------------------------------------------
 
+**/// Utilisateurs ///**
+
+> Afficher les utilisateurs
+
+cat etc/passwd
+adduser alex
+passwd alex
+
+-----------------------------------------------------------
+
 uname -a / df -ah 
