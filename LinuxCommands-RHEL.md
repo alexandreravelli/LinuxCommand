@@ -93,8 +93,11 @@ vi fichier.txt (e pour edit)
 > Afficher les utilisateurs
 
 cat etc/passwd
-adduser alex
-passwd alex
+
+> Créer un utilisateur + mot de passe
+
+- adduser alex
+- passwd alex
 
 -----------------------------------------------------------
 
