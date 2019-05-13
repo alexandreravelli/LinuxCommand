@@ -63,6 +63,7 @@ in progress
 - yum install openssh-server
 - service sshd start
 - service sshd status
+- systemctl start sshd
 - ssh-keygen -t ed25519
 
 -----------------------------------------------------------
