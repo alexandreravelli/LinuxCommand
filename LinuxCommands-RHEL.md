@@ -115,7 +115,7 @@ in progress
 
 **/// nmap ///**
 
-> nmap -sV ip
+- nmap -sV ip
 
 -----------------------------------------------------------
 
@@ -125,4 +125,13 @@ in progress
 
 -----------------------------------------------------------
 
-uname -a / df -ah 
+**/// firewalld ///**
+
+> To stop firewalld
+
+- sudo systemctl stop firewalld
+- sudo systemctl disable firewalld
+- sudo systemctl mask firewalld
+
+-----------------------------------------------------------
+
