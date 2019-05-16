@@ -147,5 +147,9 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 -----------------------------------------------------------
 
-How To Secure A Linux Server > https://github.com/imthenachoman/How-To-Secure-A-Linux-Server
+/// How To Secure A Linux Server  ///
+
+- https://github.com/imthenachoman/How-To-Secure-A-Linux-Server
+
+-----------------------------------------------------------
 
