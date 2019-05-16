@@ -121,7 +121,17 @@ in progress
 
 **/// fail2ban ///**
 
-> 
+> Install
+
+- yum install fail2ban
+
+> Configurer fail2ban
+
+- cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+- vi /etc/fail2ban/jail.local
+- systemctl enable fail2ban
+- systemctl start fail2ban
+- cat /var/log/fail2ban
 
 -----------------------------------------------------------
 
