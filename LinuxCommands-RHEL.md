@@ -133,6 +133,8 @@ in progress
 - systemctl start fail2ban
 - cat /var/log/fail2ban
 
+https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
+
 -----------------------------------------------------------
 
 **/// firewalld ///**
