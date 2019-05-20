@@ -156,3 +156,8 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 **/// Passer en Root ///**
 
 sudo passwd root
+
+
+
+dhclient enp0s3
+
