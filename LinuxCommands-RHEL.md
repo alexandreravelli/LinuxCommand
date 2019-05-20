@@ -79,7 +79,7 @@ in progress
 
 - AllowGroups sshusers
 
-> Restart ssh
+> Restart SSH
 
 - sudo systemctl restart sshd
 
