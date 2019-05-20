@@ -68,7 +68,7 @@ in progress
 
 > Banner Messages
 
-https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
+- https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
 
 
 > Allow Group SSH
@@ -85,7 +85,7 @@ https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
 
 > SSH without password
 
-https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/
+- https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/
 
 -----------------------------------------------------------
 
