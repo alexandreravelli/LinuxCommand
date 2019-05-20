@@ -73,12 +73,14 @@ https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
 
 > Allow Group
 
-Dans sudo vi /etc/ssh/sshd_config
+- Dans sudo : sudo vi /etc/ssh/sshd_config
+- Rajouter 
 
-# Allow Group
-AllowGroups sshusers
+> AllowGroups sshusers
 
-sudo systemctl restart sshd
+- Restart ssh
+
+- sudo systemctl restart sshd
 
 -----------------------------------------------------------
 
