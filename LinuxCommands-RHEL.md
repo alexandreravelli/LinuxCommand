@@ -66,6 +66,10 @@ in progress
 - systemctl start sshd
 - ssh-keygen -t ed25519
 
+> Banner Messages
+
+https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
+
 -----------------------------------------------------------
 
 **/// PWD ///**
