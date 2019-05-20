@@ -70,6 +70,16 @@ in progress
 
 https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
 
+
+> Allow Group
+
+Dans sudo vi /etc/ssh/sshd_config
+
+# Allow Group
+AllowGroups sshusers
+
+sudo systemctl restart sshd
+
 -----------------------------------------------------------
 
 **/// PWD ///**
