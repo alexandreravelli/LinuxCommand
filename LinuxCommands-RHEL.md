@@ -104,7 +104,7 @@ https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
 
 > Afficher les groupes
 
-cat /etc/group
+- cat /etc/group
 
 
 > Créer un utilisateur + mot de passe
