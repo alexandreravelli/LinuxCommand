@@ -102,6 +102,11 @@ https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
 
 - cat etc/passwd
 
+> Afficher les groupes
+
+cat /etc/group
+
+
 > Créer un utilisateur + mot de passe
 
 - adduser user
@@ -164,5 +169,6 @@ sudo passwd root
 -----------------------------------------------------------
 
 dhclient enp0s3
+
 PS1="\033[1;34m\u)-(\033[32m\h\033[31m)-\033[36m[\w]\033[1;33m->\033[0m"
 
