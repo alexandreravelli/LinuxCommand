@@ -83,6 +83,10 @@ https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
 
 - sudo systemctl restart sshd
 
+> SSH without password
+
+https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/
+
 -----------------------------------------------------------
 
 **/// PWD ///**
