@@ -136,6 +136,9 @@ in progress
 - usermod -g GroupLocal NomUser (Changer l'utilisateur de groupe)
 - usermod -aG GroupLocal NomUser (Changer l'utilisateur de groupe en gardant ces anciens groups)
 
+> Ajouter un user dans un groupe
+
+- gpasswd -a alex nom du groupe
 
 -----------------------------------------------------------
 
