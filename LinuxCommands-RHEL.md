@@ -172,6 +172,11 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 **/// firewalld ///**
 
+> To start firewalld
+
+- sudo systemctl start firewalld
+- sudo systemctl enable firewalld
+
 > To stop firewalld
 
 - sudo systemctl stop firewalld
