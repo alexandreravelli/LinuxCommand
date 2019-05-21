@@ -187,7 +187,20 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 > Add a Role
 
-- sudo firewalld-cmd --permanent --add-service=http
+- sudo firewall-cmd --permanent --add-service=http
+
+> Open a port
+
+- sudo firewall-cmd --permanent --add-por=443/tcp
+
+> List ports and service
+
+- sudo firewall-cmd --list-ports
+- sudo firewall-cmd --list-services
+
+> Reload firewaldd
+
+- sudo firewall-cmd --reload
 
 -----------------------------------------------------------
 
