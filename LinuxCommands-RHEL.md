@@ -129,6 +129,10 @@ in progress
 - adduser user
 - passwd user
 
+>  Supprimer un utilisateur
+
+- sudo userdel -r user
+
 > Gestion des utilisateurs
 
 - usermod L user (Désactiver un compte)
