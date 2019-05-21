@@ -148,13 +148,15 @@ in progress
 
 **/// nmap ///**
 
+> Scan ports
+
 - nmap -sV ip
 
 -----------------------------------------------------------
 
 **/// fail2ban ///**
 
-> Install
+> Install fail2ban
 
 - yum install fail2ban
 
