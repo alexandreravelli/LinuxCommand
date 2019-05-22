@@ -66,6 +66,10 @@ in progress
 - systemctl start sshd
 - ssh-keygen -t ed25519
 
+> Connect on alternate port number
+
+- ssh -p 1022 192.168.1.100
+
 > Banner Messages
 
 - https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
