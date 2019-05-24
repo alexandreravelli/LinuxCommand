@@ -1,6 +1,10 @@
 # LinuxCommands RHEL - CentOS - Fedora - Red Hat
 in progress
 
+**/// Change a server's hostname in CentOS ///**
+
+- hostnamectl set-hostname hostname.domain.com
+
 **/// Systemctl ///**
 
 > Starting and Stopping Services
