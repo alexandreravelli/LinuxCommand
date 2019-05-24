@@ -5,6 +5,9 @@ in progress
 
 - hostnamectl set-hostname hostname.domain.com
 
+
+-----------------------------------------------------------
+
 **/// Systemctl ///**
 
 > Starting and Stopping Services
