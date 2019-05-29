@@ -2,6 +2,10 @@
 in progress
 
 
+- sudo apt-get update
+- sudo apt-get upgrade
+
+
 **/// How can I install Split Terminator - Multitasking ///**
 
 - Terminator
