@@ -1,4 +1,4 @@
-MC
+**/// How can I install Midnight Commander on Ubuntu ///**
 
 You need to enable the universe repository:
 
@@ -7,3 +7,5 @@ You need to enable the universe repository:
 - sudo apt update
 
 - sudo apt install mc
+
+-----------------------------------------------------------
