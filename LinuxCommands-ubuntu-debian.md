@@ -18,9 +18,9 @@ in progress
 
 > On boot
 
-> sudo systemctl enable ssh-
------------------------------------------------------------
+- sudo systemctl enable ssh
 
+-----------------------------------------------------------
 
 **/// How can I install Split Terminator - Multitasking ///**
 
