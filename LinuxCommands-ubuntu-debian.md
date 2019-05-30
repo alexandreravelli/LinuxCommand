@@ -11,6 +11,7 @@ in progress
 
 - sudo apt-get update
 - sudo apt-get install openssh-server
+- ssh-keygen -t ed25519
 
 > UFW
 
