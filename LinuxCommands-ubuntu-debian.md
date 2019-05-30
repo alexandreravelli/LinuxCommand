@@ -5,6 +5,23 @@ in progress
 - sudo apt-get update
 - sudo apt-get upgrade
 
+**/// SSH ///**
+
+- Install
+
+> sudo apt-get update
+> sudo apt-get install openssh-server
+
+- UFW
+
+> sudo ufw allow ssh
+
+- On boot
+
+> sudo systemctl enable ssh
+
+-----------------------------------------------------------
+
 
 **/// How can I install Split Terminator - Multitasking ///**
 
