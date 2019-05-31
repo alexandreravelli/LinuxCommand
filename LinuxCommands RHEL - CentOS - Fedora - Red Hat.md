@@ -7,7 +7,6 @@
 
 - hostnamectl set-hostname hostname.domain.com
 
-
 -----------------------------------------------------------
 
 **/// Systemctl ///**
@@ -89,7 +88,7 @@
 
 - sudo vi /etc/ssh/sshd_config
 
-> Rajouter 
+> Add Groups
 
 - AllowGroups sshusers
 
@@ -113,7 +112,7 @@
 
 **/// Touch ///**
 
-> Créer un fichier
+> Create a file
 
 - touch fichier.txt
 
@@ -121,7 +120,7 @@
 
 **/// VI ///**
 
-> Éditer un fichier
+> Change a file
 
 - vi fichier.txt (e pour edit)
 
@@ -247,6 +246,6 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 **/// SMTP ///**
 
-
+-----------------------------------------------------------
 
 
