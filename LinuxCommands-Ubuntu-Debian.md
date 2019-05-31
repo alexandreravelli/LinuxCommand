@@ -5,6 +5,12 @@ in progress
 - sudo apt-get update
 - sudo apt-get upgrade
 
+**/// htop ///**
+
+> Display running processes, kill them, and change their priority level. 
+
+- sudo apt-get install htop
+
 **/// SSH ///**
 
 > Install
