@@ -1,4 +1,4 @@
-# LinuxCommands RHEL - Ubuntu - Debian - Kubuntu
+# LinuxCommands RHEL - Ubuntu - Debian
 in progress
 
 
