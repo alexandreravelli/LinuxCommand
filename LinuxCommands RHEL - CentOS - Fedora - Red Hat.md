@@ -232,8 +232,3 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 - mc
 
 -----------------------------------------------------------
-
-dhclient enp0s3
-
-PS1="\033[1;34m\u)-(\033[32m\h\033[31m)-\033[36m[\w]\033[1;33m->\033[0m"
-
