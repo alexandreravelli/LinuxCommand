@@ -1,6 +1,9 @@
 # LinuxCommands RHEL - CentOS - Fedora - Red Hat
 in progress
 
+
+![alt text](http://url/to/img.png)
+
 **/// Change a server's hostname in CentOS ///**
 
 - hostnamectl set-hostname hostname.domain.com
