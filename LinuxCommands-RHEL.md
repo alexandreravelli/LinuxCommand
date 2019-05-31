@@ -2,7 +2,7 @@
 in progress
 
 
-![alt text](http://url/to/img.png)
+![alt text](https://imgur.com/JpSHwpA)
 
 **/// Change a server's hostname in CentOS ///**
 
