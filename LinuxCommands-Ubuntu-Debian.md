@@ -1,4 +1,4 @@
-# LinuxCommands RHEL - Ubuntu - Debian
+# LinuxCommands Ubuntu - Debian
 in progress
 
 
