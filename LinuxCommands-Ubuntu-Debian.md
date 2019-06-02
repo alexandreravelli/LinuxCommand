@@ -24,6 +24,12 @@ in progress
 - sudo ufw enable
 - sudo ufw status
 - sudo ufw status verbose
+
+> Deny all outgoing traffic (paranoid)
+- sudo ufw default deny outgoing comment 'deny all outgoing traffic'
+
+> allow ssh
+- sudo ufw limit in ssh comment 'allow SSH connections in'
  
 > allow traffic out on port 53 -- DNS
 - sudo ufw allow out 53 comment 'allow DNS calls out'
