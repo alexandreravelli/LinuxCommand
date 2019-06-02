@@ -24,31 +24,25 @@ in progress
 - sudo ufw enable
 - sudo ufw status
 - sudo ufw status verbose
-
-- sudo ufw allow ssh
-
-> On boot
-
-- sudo systemctl enable ssh
  
-# allow traffic out on port 53 -- DNS
-sudo ufw allow out 53 comment 'allow DNS calls out'
+> allow traffic out on port 53 -- DNS
+- sudo ufw allow out 53 comment 'allow DNS calls out'
 
-# allow traffic out on port 123 -- NTP
-sudo ufw allow out 123 comment 'allow NTP out'
+> allow traffic out on port 123 -- NTP
+- sudo ufw allow out 123 comment 'allow NTP out'
 
-# allow traffic out for HTTP, HTTPS, or FTP
-# apt might needs these depending on which sources you're using
-sudo ufw allow out http comment 'allow HTTP traffic out'
-sudo ufw allow out https comment 'allow HTTPS traffic out'
-sudo ufw allow out ftp comment 'allow FTP traffic out'
+> allow traffic out for HTTP, HTTPS, or FTP
+  apt might needs these depending on which sources you're using
+- sudo ufw allow out http comment 'allow HTTP traffic out'
+- sudo ufw allow out https comment 'allow HTTPS traffic out'
+- sudo ufw allow out ftp comment 'allow FTP traffic out'
 
-# allow whois
-sudo ufw allow out whois comment 'allow whois'
+> allow whois
+- sudo ufw allow out whois comment 'allow whois'
 
-# allow traffic out on port 68 -- the DHCP client
-# you only need this if you're using DHCP
-sudo ufw allow out 68 comment 'allow the DHCP client to update'
+> allow traffic out on port 68 -- the DHCP client
+  you only need this if you're using DHCP
+- sudo ufw allow out 68 comment 'allow the DHCP client to update'
 
 -----------------------------------------------------------
 
