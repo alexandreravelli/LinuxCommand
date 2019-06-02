@@ -21,6 +21,10 @@ in progress
 
 > UFW
 
+- sudo ufw enable
+- sudo ufw status
+- sudo ufw status verbose
+
 - sudo ufw allow ssh
 
 > On boot
