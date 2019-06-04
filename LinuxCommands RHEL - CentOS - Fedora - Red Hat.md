@@ -25,6 +25,26 @@
 
 -----------------------------------------------------------
 
+**/// Limit Who Can Use sudo ///**
+
+> Create a group
+
+- sudo groupadd sudousers
+
+> Add account to the group:
+
+- sudo usermod -a -G sudousers user1
+
+> Make a backup of the sudo's configuration file /etc/sudoers:
+
+- sudo cp --preserve /etc/sudoers /etc/sudoers.$(date +"%Y%m%d%H%M%S")
+
+> Edit sudo's configuration file /etc/sudoers:
+
+- sudo visudo
+
+> %sudousers   ALL=(ALL:ALL) ALL
+
 **/// SSH ///**
 
 - yum install openssh-server
