@@ -55,11 +55,11 @@ Tell sudo to only allow users in the sudousers group to use sudo by adding this 
 - ``` systemctl start sshd ```
 - ``` ssh-keygen -t ed25519 ```
 
-> Acces SSHD Config
+Acces SSHD Config
 
 - ```sudo vi /etc/ssh/sshd_config ```
 
-> Create a group
+Create a group
 
 - ```sudo groupadd sshusers ```
 
