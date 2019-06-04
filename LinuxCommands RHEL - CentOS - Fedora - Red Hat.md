@@ -27,7 +27,7 @@
 
 **/// Limit Who Can Use sudo ///**
 
-> Create a group
+Create a group
 
 - ``` sudo groupadd sudousers ```
 
