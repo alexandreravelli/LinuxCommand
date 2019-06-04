@@ -42,13 +42,15 @@
 - https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
 
 
-> Allow Group SSH
+> Acces SSHD Config
 
 - sudo vi /etc/ssh/sshd_config
 
-> Add Groups
+> Create a group
 
-- AllowGroups sshusers
+- sudo groupadd sshusers
+
+> sudo usermod -a -G sshusers user1
 
 > Restart SSH
 
