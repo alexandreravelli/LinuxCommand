@@ -33,15 +33,6 @@
 - systemctl start sshd
 - ssh-keygen -t ed25519
 
-> Connect on alternate port number
-
-- ssh -p 1022 192.168.1.100
-
-> Banner Messages
-
-- https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
-
-
 > Acces SSHD Config
 
 - sudo vi /etc/ssh/sshd_config
@@ -52,14 +43,22 @@
 
 > sudo usermod -a -G sshusers user1
 
-> Restart SSH
-
-- sudo systemctl restart sshd
-
 > Make a backup of OpenSSH server's configuration file /etc/ssh/sshd_config
 
 - sudo cp --preserve /etc/ssh/sshd_config /etc/ssh/sshd_config.$(date +"%Y%m%d%H%M%S")
 - sudo sed -i -r -e '/^#|^$/ d' /etc/ssh/sshd_config
+
+> Restart SSH
+
+- sudo systemctl restart sshd
+
+> Connect on alternate port number
+
+- ssh -p 1022 192.168.1.100
+
+> Banner Messages
+
+- https://www.tecmint.com/protect-ssh-logins-with-ssh-motd-banner-messages/
 
 > SSH without password
 
