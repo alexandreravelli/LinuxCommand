@@ -56,6 +56,11 @@
 
 - sudo systemctl restart sshd
 
+> Make a backup of OpenSSH server's configuration file /etc/ssh/sshd_config
+
+- sudo cp --preserve /etc/ssh/sshd_config /etc/ssh/sshd_config.$(date +"%Y%m%d%H%M%S")
+- sudo sed -i -r -e '/^#|^$/ d' /etc/ssh/sshd_config
+
 > SSH without password
 
 - https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/
