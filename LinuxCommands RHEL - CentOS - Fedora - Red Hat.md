@@ -17,7 +17,7 @@
 
 **/// Manage OS updates ///**
 
-- sudo yum check-update
+``` sudo yum check-update ```
 - sudo yum list obsoletes
 - sudo yum update
 - sudo yum update --security
