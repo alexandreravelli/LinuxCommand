@@ -41,7 +41,9 @@
 
 - sudo groupadd sshusers
 
-> sudo usermod -a -G sshusers user1
+> Add account to the group:
+
+- sudo usermod -a -G sshusers user1
 
 > Make a backup of OpenSSH server's configuration file /etc/ssh/sshd_config
 
