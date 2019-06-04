@@ -5,23 +5,23 @@
 
 **/// Change a server's hostname in CentOS ///**
 
-- hostnamectl set-hostname hostname.domain.com
+- ``` hostnamectl set-hostname hostname.domain.com```
 
 -----------------------------------------------------------
 
 **/// Root ///**
 
-- sudo passwd root
+- ```sudo passwd root ```
 
 -----------------------------------------------------------
 
 **/// Manage OS updates ///**
 
 - ``` sudo yum check-update ```
-- sudo yum list obsoletes
-- sudo yum update
-- sudo yum update --security
-- cat /etc/redhat-release
+- ``` sudo yum list obsoletes ```
+- ``` sudo yum update ```
+- ``` sudo yum update --security ```
+- ``` cat /etc/redhat-release ```
 
 -----------------------------------------------------------
 
