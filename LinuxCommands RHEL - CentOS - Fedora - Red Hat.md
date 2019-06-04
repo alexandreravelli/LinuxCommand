@@ -49,36 +49,36 @@
 
 **/// SSH ///**
 
-- yum install openssh-server
-- service sshd start
-- service sshd status
-- systemctl start sshd
-- ssh-keygen -t ed25519
+- ``` yum install openssh-server ```
+- ``` service sshd start ```
+- ``` service sshd status ```
+- ``` systemctl start sshd ```
+- ``` ssh-keygen -t ed25519 ```
 
 > Acces SSHD Config
 
-- sudo vi /etc/ssh/sshd_config
+- ```sudo vi /etc/ssh/sshd_config ```
 
 > Create a group
 
-- sudo groupadd sshusers
+- ```sudo groupadd sshusers ```
 
 > Add account to the group:
 
-- sudo usermod -a -G sshusers user1
+- ``` sudo usermod -a -G sshusers user1 ```
 
 > Make a backup of OpenSSH server's configuration file /etc/ssh/sshd_config
 
-- sudo cp --preserve /etc/ssh/sshd_config /etc/ssh/sshd_config.$(date +"%Y%m%d%H%M%S")
-- sudo sed -i -r -e '/^#|^$/ d' /etc/ssh/sshd_config
+- ``` sudo cp --preserve /etc/ssh/sshd_config /etc/ssh/sshd_config.$(date +"%Y%m%d%H%M%S") ```
+- ``` sudo sed -i -r -e '/^#|^$/ d' /etc/ssh/sshd_config ```
 
 > Restart SSH
 
-- sudo systemctl restart sshd
+- ``` sudo systemctl restart sshd ```
 
 > Connect on alternate port number
 
-- ssh -p 1022 192.168.1.100
+- ```ssh -p 1022 192.168.1.100 ```
 
 > Banner Messages
 
@@ -94,15 +94,15 @@
 
 > Install fail2ban
 
-- yum install fail2ban
+- ``` yum install fail2ban ```
 
 > Configurer fail2ban
 
-- cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
-- vi /etc/fail2ban/jail.local
-- systemctl enable fail2ban
-- systemctl start fail2ban
-- cat /var/log/fail2ban
+- ``` cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local ```
+- ``` vi /etc/fail2ban/jail.local ```
+- ``` systemctl enable fail2ban ```
+- ``` systemctl start fail2ban ```
+- ``` cat /var/log/fail2ban ```
 
 https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
@@ -112,31 +112,31 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 > To start firewalld
 
-- sudo systemctl start firewalld
-- sudo systemctl enable firewalld
+- ``` sudo systemctl start firewalld ```
+- ``` sudo systemctl enable firewalld ```
 
 > To stop firewalld
 
-- sudo systemctl stop firewalld
-- sudo systemctl disable firewalld
-- sudo systemctl mask firewalld
+- ``` sudo systemctl stop firewalld ```
+- ``` sudo systemctl disable firewalld ```
+- ``` sudo systemctl mask firewalld ```
 
 > Add a Role
 
-- sudo firewall-cmd --permanent --add-service=http
+- ``` sudo firewall-cmd --permanent --add-service=http ```
 
 > Open a port
 
-- sudo firewall-cmd --permanent --add-por=443/tcp
+- ``` sudo firewall-cmd --permanent --add-por=443/tcp ```
 
 > List ports and service
 
-- sudo firewall-cmd --list-ports
-- sudo firewall-cmd --list-services
+- ``` sudo firewall-cmd --list-ports ```
+- ``` sudo firewall-cmd --list-services ```
 
 > Reload firewaldd
 
-- sudo firewall-cmd --reload
+- ```sudo firewall-cmd --reload ```
 
 -----------------------------------------------------------
 
@@ -144,28 +144,28 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 > Starting and Stopping Services
 
-- sudo systemctl start application
-- sudo systemctl stop application.service
-- sudo systemctl restart application.service
-- sudo systemctl reload application.service
+- ``` sudo systemctl start application ```
+- ``` sudo systemctl stop application.service ```
+- ``` sudo systemctl restart application.service ```
+- ``` sudo systemctl reload application.service ```
 
 > To start, disable a service at boot
 
-- sudo systemctl enable application.service
-- sudo systemctl disable application.service
+- ``` sudo systemctl enable application.service ```
+- ``` sudo systemctl disable application.service ```
 
 > Checking the Status of Services
 
-- systemctl status application.service
+- ``` systemctl status application.service ```
 
 -----------------------------------------------------------
 
 **/// Network ///**
 
-- netstat
-- netstat -tulpn
-- ifconfig
-- ifconfig eth0 192.168.1.5 netmask 255.255.255.0
+- ``` netstat ```
+- ``` netstat -tulpn ```
+- ``` ifconfig ```
+- ``` ifconfig eth0 192.168.1.5 netmask 255.255.255.0 ```
 
 -----------------------------------------------------------
 
@@ -173,16 +173,16 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 > Checking the Current Status & Mode of SELinux
 
-- sestatus
+- ``` sestatus ```
 
 > Temporarily Disable SELinux on CentOS 7
 
-- sudo setenforce 0 (permissive)
-- sudo setenforce 1 (enforcing)
+- ``` sudo setenforce 0 (permissive) ```
+- ``` sudo setenforce 1 (enforcing) ```
 
 > Permanently Disable SELinux on CentOS 7
 
-- sudo nano /etc/selinux/config
+- ``` sudo nano /etc/selinux/config ```
 - to SELINUX=disabled
 
 -----------------------------------------------------------
@@ -191,7 +191,7 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 > Afficher le chemin d'accès
 
-- pwd
+- ```pwd ```
 
 -----------------------------------------------------------
 
@@ -199,7 +199,7 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 > Create a file
 
-- touch fichier.txt
+- ``` touch fichier.txt ```
 
 -----------------------------------------------------------
 
@@ -207,7 +207,7 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 > Change a file
 
-- vi fichier.txt (e pour edit)
+- ``` vi fichier.txt (e pour edit) ```
 
 -----------------------------------------------------------
 
@@ -215,32 +215,32 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 > Afficher les utilisateurs
 
-- cat etc/passwd
+- ``` cat etc/passwd ```
 
 > Afficher les groupes
 
-- cat /etc/group
+- ``` cat /etc/group ```
 
 
 > Créer un utilisateur + mot de passe
 
-- adduser user
-- passwd user
+- ``` adduser user ```
+- ``` passwd user ```
 
 >  Supprimer un utilisateur
 
-- sudo userdel -r user
+- ``` sudo userdel -r user ```
 
 > Gestion des utilisateurs
 
-- usermod L user (Désactiver un compte)
-- usermod U user (Activer un compte)
-- usermod -g GroupLocal NomUser (Changer l'utilisateur de groupe)
-- usermod -aG GroupLocal NomUser (Changer l'utilisateur de groupe en gardant ces anciens groups)
+- ``` usermod L user (Désactiver un compte) ```
+- ``` usermod U user (Activer un compte) ```
+- ``` usermod -g GroupLocal NomUser (Changer l'utilisateur de groupe) ```
+- ``` usermod -aG GroupLocal NomUser (Changer l'utilisateur de groupe en gardant ces anciens groups) ```
 
 > Ajouter un user dans un groupe
 
-- gpasswd -a alex nom du groupe
+- ``` gpasswd -a alex nom du groupe ```
 
 -----------------------------------------------------------
 
@@ -248,7 +248,7 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 > Scan ports
 
-- nmap -sV ip
+- ``` nmap -sV ip ```
 
 -----------------------------------------------------------
 
@@ -256,8 +256,8 @@ https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
 
 > Install Midnight Commander
 
-- yum install mc
-- mc
+- ``` yum install mc ```
+- ``` mc ```
 
 -----------------------------------------------------------
 
