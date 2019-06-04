@@ -9,32 +9,9 @@
 
 -----------------------------------------------------------
 
-**/// Systemctl ///**
+**/// Root ///**
 
-> Starting and Stopping Services
-
-- sudo systemctl start application
-- sudo systemctl stop application.service
-- sudo systemctl restart application.service
-- sudo systemctl reload application.service
-
-> To start, disable a service at boot
-
-- sudo systemctl enable application.service
-- sudo systemctl disable application.service
-
-> Checking the Status of Services
-
-- systemctl status application.service
-
------------------------------------------------------------
-
-**/// Network ///**
-
-- netstat
-- netstat -tulpn
-- ifconfig
-- ifconfig eth0 192.168.1.5 netmask 255.255.255.0
+- sudo passwd root
 
 -----------------------------------------------------------
 
@@ -45,25 +22,6 @@
 - sudo yum update
 - sudo yum update --security
 - cat /etc/redhat-release
-
------------------------------------------------------------
-
-
-**/// SELINUX ///**
-
-> Checking the Current Status & Mode of SELinux
-
-- sestatus
-
-> Temporarily Disable SELinux on CentOS 7
-
-- sudo setenforce 0 (permissive)
-- sudo setenforce 1 (enforcing)
-
-> Permanently Disable SELinux on CentOS 7
-
-- sudo nano /etc/selinux/config
-- to SELINUX=disabled
 
 -----------------------------------------------------------
 
@@ -99,6 +57,103 @@
 > SSH without password
 
 - https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/
+
+-----------------------------------------------------------
+
+**/// fail2ban ///**
+
+> Install fail2ban
+
+- yum install fail2ban
+
+> Configurer fail2ban
+
+- cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+- vi /etc/fail2ban/jail.local
+- systemctl enable fail2ban
+- systemctl start fail2ban
+- cat /var/log/fail2ban
+
+https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
+
+-----------------------------------------------------------
+
+**/// firewalld ///**
+
+> To start firewalld
+
+- sudo systemctl start firewalld
+- sudo systemctl enable firewalld
+
+> To stop firewalld
+
+- sudo systemctl stop firewalld
+- sudo systemctl disable firewalld
+- sudo systemctl mask firewalld
+
+> Add a Role
+
+- sudo firewall-cmd --permanent --add-service=http
+
+> Open a port
+
+- sudo firewall-cmd --permanent --add-por=443/tcp
+
+> List ports and service
+
+- sudo firewall-cmd --list-ports
+- sudo firewall-cmd --list-services
+
+> Reload firewaldd
+
+- sudo firewall-cmd --reload
+
+-----------------------------------------------------------
+
+**/// Systemctl ///**
+
+> Starting and Stopping Services
+
+- sudo systemctl start application
+- sudo systemctl stop application.service
+- sudo systemctl restart application.service
+- sudo systemctl reload application.service
+
+> To start, disable a service at boot
+
+- sudo systemctl enable application.service
+- sudo systemctl disable application.service
+
+> Checking the Status of Services
+
+- systemctl status application.service
+
+-----------------------------------------------------------
+
+**/// Network ///**
+
+- netstat
+- netstat -tulpn
+- ifconfig
+- ifconfig eth0 192.168.1.5 netmask 255.255.255.0
+
+-----------------------------------------------------------
+
+**/// SELINUX ///**
+
+> Checking the Current Status & Mode of SELinux
+
+- sestatus
+
+> Temporarily Disable SELinux on CentOS 7
+
+- sudo setenforce 0 (permissive)
+- sudo setenforce 1 (enforcing)
+
+> Permanently Disable SELinux on CentOS 7
+
+- sudo nano /etc/selinux/config
+- to SELINUX=disabled
 
 -----------------------------------------------------------
 
@@ -167,84 +222,12 @@
 
 -----------------------------------------------------------
 
-**/// fail2ban ///**
-
-> Install fail2ban
-
-- yum install fail2ban
-
-> Configurer fail2ban
-
-- cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
-- vi /etc/fail2ban/jail.local
-- systemctl enable fail2ban
-- systemctl start fail2ban
-- cat /var/log/fail2ban
-
-https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
-
------------------------------------------------------------
-
-**/// firewalld ///**
-
-> To start firewalld
-
-- sudo systemctl start firewalld
-- sudo systemctl enable firewalld
-
-> To stop firewalld
-
-- sudo systemctl stop firewalld
-- sudo systemctl disable firewalld
-- sudo systemctl mask firewalld
-
-> Add a Role
-
-- sudo firewall-cmd --permanent --add-service=http
-
-> Open a port
-
-- sudo firewall-cmd --permanent --add-por=443/tcp
-
-> List ports and service
-
-- sudo firewall-cmd --list-ports
-- sudo firewall-cmd --list-services
-
-> Reload firewaldd
-
-- sudo firewall-cmd --reload
-
------------------------------------------------------------
-
-**/// Root ///**
-
-- sudo passwd root
-
------------------------------------------------------------
-
 **/// Midnight Commander ///**
 
 > Install Midnight Commander
 
 - yum install mc
 - mc
-
------------------------------------------------------------
-
-**/// iSCI ///**
-
-**/// NTP ///**
-
-**/// LDAP ///**
-
-**/// BIND ///**
-
-**/// NFS ///**
-
-**/// SMB ///**
-
-**/// SMTP ///**
 
 -----------------------------------------------------------
 
