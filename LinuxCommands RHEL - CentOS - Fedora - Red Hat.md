@@ -29,21 +29,23 @@
 
 > Create a group
 
-- sudo groupadd sudousers
+- ``` sudo groupadd sudousers ```
 
 > Add account to the group:
 
-- sudo usermod -a -G sudousers user1
+- ``` sudo usermod -a -G sudousers user1 ```
 
 > Make a backup of the sudo's configuration file /etc/sudoers:
 
-- sudo cp --preserve /etc/sudoers /etc/sudoers.$(date +"%Y%m%d%H%M%S")
+- ``` sudo cp --preserve /etc/sudoers /etc/sudoers.$(date +"%Y%m%d%H%M%S") ```
 
 > Edit sudo's configuration file /etc/sudoers:
 
-- sudo visudo
+- ``` sudo visudo ``` 
 
-> %sudousers   ALL=(ALL:ALL) ALL
+> Tell sudo to only allow users in the sudousers group to use sudo by adding this line if it is not already there:
+
+- ``` %sudousers   ALL=(ALL:ALL) ALL ```
 
 **/// SSH ///**
 
