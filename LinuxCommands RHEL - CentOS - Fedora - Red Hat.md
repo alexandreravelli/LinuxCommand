@@ -98,13 +98,30 @@ Install fail2ban
 
 Configurer fail2ban
 
-- ``` cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local ```
-- ``` vi /etc/fail2ban/jail.local ```
+- ``` cp -pf /etc/fail2ban/jail.conf /etc/fail2ban/jail.local ```
+- ``` nano /etc/fail2ban/jail.local ```
+
+Add a jail file to protect SSH.
+
+- ``` nano /etc/fail2ban/jail.d/sshd.local``` 
+
+[sshd]
+enabled = true
+port = ssh
+#action = firewallcmd-ipset
+logpath = %(sshd_log)s
+maxretry = 5
+bantime = 86400
+
 - ``` systemctl enable fail2ban ```
 - ``` systemctl start fail2ban ```
 - ``` cat /var/log/fail2ban ```
 
-https://doc.fedora-fr.org/wiki/SSH_:_Se_prot%C3%A9ger_des_attaques_avec_fail2ban
+Check the Fal2Ban Status
+
+- ``` fail2ban-client status ```
+
+https://www.howtoforge.com/tutorial/how-to-install-fail2ban-on-centos/
 
 -----------------------------------------------------------
 
