@@ -181,6 +181,8 @@ Check ntp's status:
 Install BIND
 
 - ```sudo yum install bind bind-utils ```
+- ``` sudo firewall-cmd --permanent -- add-service dns ```
+- ``` sudo firewall-cmd --reload ```
 
 Start BIND
 
