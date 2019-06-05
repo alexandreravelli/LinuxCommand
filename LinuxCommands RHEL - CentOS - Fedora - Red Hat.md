@@ -347,7 +347,7 @@ Ajouter un user dans un groupe
 
 Valeur | Masque réseau | Valeur numérique | 
 -------| --------------| ----------      | 
-A      | 255.0.0.0     | 1.0.0.0 - 126.255.255.25 | 
+rw | 600    | 	Le propriétaire peut lire et écrire. Le groupe et les autres ne peuvent rien faire avec le fichier. | 
 B      | 255.255.0.0   | 128.0.0.0 - 191.255.255.255 |
 C      | 255.255.255.0 | 192.0.0.0 - 223.255.255.255 |
 D      | 240.0.0.0     | 224.0.0.0 - 239.255.255.255 |
