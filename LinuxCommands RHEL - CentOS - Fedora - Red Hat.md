@@ -355,7 +355,7 @@ Valeur | Masque réseau | Valeur numérique |
  -rwxr-xr-x	 | 755 | 	Le propriétaire peut lire, écrire et exécuter. Le groupe et les’autres peuvent lire et exécuter. | 
  -rwxrwxrwx	 | 777 | 	Le propriétaire, le groupe et autres peuvent lire, écrire et exécuter. | 
  
- Les autorisations communes pour les répertoires:
+ Les autorisations communes pour les <b> répertoires </b>:
 
 Valeur | Masque réseau | Valeur numérique | 
 -------| --------------| ----------      | 
