@@ -48,6 +48,9 @@ Tell sudo to only allow users in the sudousers group to use sudo by adding this 
 
 - ``` %sudousers   ALL=(ALL:ALL) ALL ```
 
+
+-----------------------------------------------------------
+
 **/// SSH ///**
 
 - ``` yum install openssh-server ```
@@ -56,7 +59,31 @@ Tell sudo to only allow users in the sudousers group to use sudo by adding this 
 - ``` systemctl start sshd ```
 - ``` ssh-keygen -t ed25519 ```
 
-Acces SSHD Config
+```
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/user/.ssh/id_ed25519):
+Created directory '/home/user/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/user/.ssh/id_ed25519.
+Your public key has been saved in /home/user/.ssh/id_ed25519.pub.
+The key fingerprint is:
+SHA256:F44D4dr2zoHqgj0i2iVIHQ32uk/Lx4P+raayEAQjlcs user@client
+The key's randomart image is:
++--[ED25519 256]--+
+|xxxx  x          |
+|o.o +. .         |
+| o o oo   .      |
+|. E oo . o .     |
+| o o. o S o      |
+|... .. o o       |
+|.+....+ o        |
+|+.=++o.B..       |
+|+..=**=o=.       |
++----[SHA256]-----+
+
+```
+Acces to sshd Config
 
 - ```sudo vi /etc/ssh/sshd_config ```
 
