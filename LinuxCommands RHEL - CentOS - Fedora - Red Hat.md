@@ -347,11 +347,12 @@ Ajouter un user dans un groupe
 
 Valeur | Masque réseau | Valeur numérique | 
 -------| --------------| ----------      | 
-rw | 600    | 	Le propriétaire peut lire et écrire. Le groupe et les autres ne peuvent rien faire avec le fichier. | 
-B      | 255.255.0.0   | 128.0.0.0 - 191.255.255.255 |
-C      | 255.255.255.0 | 192.0.0.0 - 223.255.255.255 |
-D      | 240.0.0.0     | 224.0.0.0 - 239.255.255.255 |
-
+ rw | 600 | 	Le propriétaire peut lire et écrire. Le groupe et les autres ne peuvent rien faire avec le fichier. | 
+-rw-r-r-	      | 644   | Le propriétaire peut lire et écrire, le groupe et les autres peuvent lire. |
+-rw-rw-rw-	      | 666 | Le propriétaire, le groupe et les autres peuvent lire et écrire. |
+-rwx–	      | 700   | Le propriétaire peut lire, écrire et exécuter. Le groupe et les autres ne peuvent rien faire avec le fichier |
+ -rwxr-xr-x	 | 755 | 	Le propriétaire peut lire, écrire et exécuter. Le groupe et les’autres peuvent lire et exécuter. | 
+ -rwxrwxrwx	 | 777 | 	Le propriétaire, le groupe et autres peuvent lire, écrire et exécuter. | 
 
 **/// nmap ///**
 
