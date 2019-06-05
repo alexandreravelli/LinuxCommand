@@ -195,6 +195,11 @@ named.conf.local file for editing
 
 - ``` sudo vi /etc/named/named.conf.local ```
 
+check conf
+
+- ``` sudo named-checkconf ```
+
+
 https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-centos-7
 
 -----------------------------------------------------------
