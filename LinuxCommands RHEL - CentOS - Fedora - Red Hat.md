@@ -179,6 +179,11 @@ Install BIND
 
 - ```sudo yum install bind bind-utils ```
 
+Start BIND
+
+- ``` sudo systemctl start named ```
+- ``` sudo systemctl enable named ```
+
 https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-centos-7
 
 -----------------------------------------------------------
