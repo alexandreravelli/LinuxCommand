@@ -162,6 +162,8 @@ Reload firewaldd
 
 **/// ntp ///**
 
+Install NTP
+
 - ``` sudo yum install ntp ```
 - ``` sudo systemctl start ntpd ```
 - ``` sudo systemctl enable ntpd ```
