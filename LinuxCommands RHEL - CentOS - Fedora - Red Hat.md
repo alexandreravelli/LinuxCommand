@@ -160,6 +160,19 @@ Reload firewaldd
 
 -----------------------------------------------------------
 
+**/// ntp ///**
+
+- ``` sudo yum install ntp ```
+- ``` sudo systemctl start ntpd ```
+- ``` sudo systemctl enable ntpd ```
+- ``` sudo firewall-cmd --permanent --add-service=ntp ```
+- ``` sudo firewall-cmd --reload ```
+
+Check ntp's status:
+- ``` sudo ntpq -p ```
+
+-----------------------------------------------------------
+
 **/// Systemctl ///**
 
 Starting and Stopping Services
@@ -280,16 +293,3 @@ Install Midnight Commander
 - ``` mc ```
 
 -----------------------------------------------------------
-
-
-ntp
-
-sudo yum install ntp
-sudo systemctl start ntpd
-sudo systemctl enable ntpd
-sudo firewall-cmd --permanent --add-service=ntp
-sudo firewall-cmd --reload
-
-Check ntp's status:
-sudo ntpq -p
-
