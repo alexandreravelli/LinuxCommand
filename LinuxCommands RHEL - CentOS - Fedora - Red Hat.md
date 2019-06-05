@@ -173,6 +173,14 @@ Install NTP
 Check ntp's status:
 - ``` sudo ntpq -p ```
 
+**/// BIND ///**
+
+Install BIND
+
+- ```sudo yum install bind bind-utils ```
+
+https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-centos-7
+
 -----------------------------------------------------------
 
 **/// Systemctl ///**
