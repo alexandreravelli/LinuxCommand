@@ -1,5 +1,6 @@
 # LinuxCommands RHEL - CentOS - Fedora - Red Hat
- Learn, and save time - in progress 👋
+ Learn, and save time 👋
+ in progress
 
 ![CentOS-7-Installation](https://user-images.githubusercontent.com/22911613/58729303-5b117480-83e9-11e9-911a-6bf78fecef2c.jpeg)
 
