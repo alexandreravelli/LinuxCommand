@@ -174,6 +174,8 @@ Install NTP
 Check ntp's status:
 - ``` sudo ntpq -p ```
 
+-----------------------------------------------------------
+
 **/// BIND ///**
 
 Install BIND
@@ -188,6 +190,10 @@ Start BIND
 named.conf file for editing
 
 - ``` sudo vi /etc/named.conf ```
+
+named.conf.local file for editing
+
+- ``` sudo vi /etc/named/named.conf.local ```
 
 https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-centos-7
 
