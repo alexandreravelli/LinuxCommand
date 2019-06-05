@@ -346,7 +346,7 @@ Ajouter un user dans un groupe
  
 Voici une liste des autorisations les plus courantes pour les <b> fichiers </b> :
 
-Valeur | Masque réseau | Valeur numérique | 
+Valeur | Valeur numérique | Explication | 
 -------| --------------| ----------      | 
  rw | 600 | 	Le propriétaire peut lire et écrire. Le groupe et les autres ne peuvent rien faire avec le fichier. | 
 -rw-r-r-	      | 644   | Le propriétaire peut lire et écrire, le groupe et les autres peuvent lire. |
@@ -357,7 +357,7 @@ Valeur | Masque réseau | Valeur numérique |
  
  Les autorisations communes pour les <b> répertoires </b>:
 
-Valeur | Masque réseau | Valeur numérique | 
+Valeur | Valeur numérique | Explication | 
 -------| --------------| ----------      | 
  drwx–	 | 700 | Seul le propriétaire peut lire et écrire dans ce répertoire. | 
 drwxr-xr-x | 755  | Le propriétaire, le groupe et d’autres peuvent lire le répertoire, mais seul le propriétaire peut modifier son contenu. |
