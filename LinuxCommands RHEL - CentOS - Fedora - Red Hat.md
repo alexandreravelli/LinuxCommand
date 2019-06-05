@@ -339,6 +339,20 @@ Ajouter un user dans un groupe
 
 -----------------------------------------------------------
 
+**/// chmod & chown ///**
+
+ chmod = permet de modifier les permissions d’un fichier ou d’un dossier.
+ 
+<br> Voici une liste des autorisations les plus courantes pour les fichiers : </br>
+
+Valeur | Masque réseau | Valeur numérique | 
+-------| --------------| ----------      | 
+A      | 255.0.0.0     | 1.0.0.0 - 126.255.255.25 | 
+B      | 255.255.0.0   | 128.0.0.0 - 191.255.255.255 |
+C      | 255.255.255.0 | 192.0.0.0 - 223.255.255.255 |
+D      | 240.0.0.0     | 224.0.0.0 - 239.255.255.255 |
+
+
 **/// nmap ///**
 
 Scan ports
