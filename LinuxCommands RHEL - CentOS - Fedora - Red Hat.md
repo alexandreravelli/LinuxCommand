@@ -94,7 +94,9 @@ SSH without password
 
 Install fail2ban
 
-- ``` yum install fail2ban ```
+- ``` yum install epel-release ```
+- ``` yum install fail2ban fail2ban-systemd ```
+- ``` yum update -y selinux-policy* ```
 
 Configurer fail2ban
 
