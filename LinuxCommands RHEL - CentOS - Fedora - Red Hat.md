@@ -109,12 +109,12 @@ Add a jail file to protect SSH.
 - ``` nano /etc/fail2ban/jail.d/sshd.local``` 
 
 [sshd]
-enabled = true
+``` enabled = true
 port = ssh
 #action = firewallcmd-ipset
 logpath = %(sshd_log)s
 maxretry = 5
-bantime = 86400
+bantime = 86400 ```
 
 - ``` systemctl enable fail2ban ```
 - ``` systemctl start fail2ban ```
