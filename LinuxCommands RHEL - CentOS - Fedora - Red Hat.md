@@ -280,3 +280,14 @@ Install Midnight Commander
 -----------------------------------------------------------
 
 
+ntp
+
+sudo yum install ntp
+sudo systemctl start ntpd
+sudo systemctl enable ntpd
+sudo firewall-cmd --permanent --add-service=ntp
+sudo firewall-cmd --reload
+
+Check ntp's status:
+sudo ntpq -p
+
