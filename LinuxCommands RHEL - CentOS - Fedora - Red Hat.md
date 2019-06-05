@@ -353,6 +353,13 @@ Valeur | Masque réseau | Valeur numérique |
 -rwx–	      | 700   | Le propriétaire peut lire, écrire et exécuter. Le groupe et les autres ne peuvent rien faire avec le fichier |
  -rwxr-xr-x	 | 755 | 	Le propriétaire peut lire, écrire et exécuter. Le groupe et les’autres peuvent lire et exécuter. | 
  -rwxrwxrwx	 | 777 | 	Le propriétaire, le groupe et autres peuvent lire, écrire et exécuter. | 
+ 
+ Les autorisations communes pour les répertoires:
+
+Valeur | Masque réseau | Valeur numérique | 
+-------| --------------| ----------      | 
+ drwx–	 | 700 | Seul le propriétaire peut lire et écrire dans ce répertoire. | 
+drwxr-xr-x | 755  | Le propriétaire, le groupe et d’autres peuvent lire le répertoire, mais seul le propriétaire peut modifier son contenu. |
 
 **/// nmap ///**
 
