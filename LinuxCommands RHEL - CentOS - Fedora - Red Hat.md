@@ -341,8 +341,8 @@ Ajouter un user dans un groupe
 
 **/// chmod & chown ///**
 
- chmod = permet de modifier les permissions d’un fichier ou d’un dossier.
- Chown = permet de changer les propriétaires d’un fichier ou d’un dossier.
+ - chmod = permet de modifier les permissions d’un fichier ou d’un dossier.
+ - Chown = permet de changer les propriétaires d’un fichier ou d’un dossier.
  
 <br> Voici une liste des autorisations les plus courantes pour les fichiers : </br>
 
