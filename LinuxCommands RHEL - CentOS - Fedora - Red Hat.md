@@ -195,7 +195,7 @@ named.conf.local file for editing
 
 - ``` sudo vi /etc/named/named.conf.local ```
 
-check conf
+Run the following command to check the validity of your configuration files
 
 - ``` sudo named-checkconf ```
 
