@@ -109,7 +109,7 @@ Add a jail file to protect SSH.
 - ``` nano /etc/fail2ban/jail.d/sshd.local``` 
 
 ```
-- [sshd]
+[sshd]
 enabled = true
 port = ssh
 #action = firewallcmd-ipset
