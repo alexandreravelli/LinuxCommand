@@ -144,7 +144,8 @@ Add a Role
 
 Open a port
 
-- ``` sudo firewall-cmd --permanent --add-por=443/tcp ```
+- ``` sudo firewall-cmd --permanent --add-port=443/tcp ```
+- ```firewall-cmd --zone=public --add-port=22/tcp --permanent ```
 
 List ports and service
 
