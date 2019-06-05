@@ -184,6 +184,10 @@ Start BIND
 - ``` sudo systemctl start named ```
 - ``` sudo systemctl enable named ```
 
+named.conf file for editing
+
+- ``` sudo vi /etc/named.conf ```
+
 https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-centos-7
 
 -----------------------------------------------------------
