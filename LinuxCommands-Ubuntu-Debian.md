@@ -52,7 +52,7 @@ in progress
 
 -----------------------------------------------------------
 
-**/// neofetch **///
+**/// neofetch ///**
 
 - sudo apt install neofetch
 
