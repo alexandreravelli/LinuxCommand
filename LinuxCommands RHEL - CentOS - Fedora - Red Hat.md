@@ -391,6 +391,28 @@ Install and configure client (client as initiator)
 - ``` sudo systemctl start iscsi ```
 - ``` sudo systemctl enable iscsi ```
 
+Create an iSCSI backstore
+
+- ``` sudo targetcli ```
+- ``` ls
+- ``` /backstores/fileio create file1 /tmp/disk1.img 200M write_back=false ```
+- ``` ls ```
+
+Create an iSCSI target
+
+- ``` sudo targetcli ```
+- ``` ls ```
+- ``` cd /iscsi ```
+- ``` create iqn.2019-06.com.localnet:filedisk1 ```
+
+ Create an iSCSI LUN
+ 
+ - ``` sudo targetcli ```
+ - ``` cd / ```
+ - ``` ls ```
+ - ``` cd /iscsi/iqn.2019-06.com.localnet:filedisk1/tpg1 ```
+ - ``` luns /create /backstores/fileio/filel ```
+ - ``` ls ```
 
 
 
