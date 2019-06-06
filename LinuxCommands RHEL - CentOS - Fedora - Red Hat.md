@@ -394,7 +394,7 @@ Install and configure client (client as initiator)
 Create an iSCSI backstore
 
 - ``` sudo targetcli ```
-- ``` ls
+- ``` ls ```
 - ``` /backstores/fileio create file1 /tmp/disk1.img 200M write_back=false ```
 - ``` ls ```
 
