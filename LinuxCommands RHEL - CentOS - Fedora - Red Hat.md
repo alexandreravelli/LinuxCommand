@@ -380,3 +380,27 @@ Install Midnight Commander
 - ``` mc ```
 
 -----------------------------------------------------------
+-----------------------------------------------------------
+
+**/// iSCSI ///**
+
+Typically iSCSI is implemented in a SAN (Storage Area Network) to allow servers to access a large store of hard drive space. 
+
+Install and configure packages (server as target)
+
+- ``` sudo yum install -y targetcli ```
+- ``` sudo systemctl start target ```
+- ``` sudo systemctl enable target ```
+
+Install and configure client (client as initiator)
+
+- ``` sudo yum install -y iscsi-initiator-utils ```
+- ``` sudo systemctl start iscsid ```
+- ``` sudo systemctl enable iscsid ```
+- ``` sudo systemctl start iscsi ```
+- ``` sudo systemctl enable iscsi ```
+
+
+
+
+
