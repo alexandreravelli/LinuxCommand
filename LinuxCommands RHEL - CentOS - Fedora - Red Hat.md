@@ -413,6 +413,24 @@ Create an iSCSI target
  - ``` cd /iscsi/iqn.2019-06.com.localnet:filedisk1/tpg1 ```
  - ``` luns /create /backstores/fileio/filel ```
  - ``` ls ```
+ 
+Create access control
+
+- ``` sudo targetcli ```
+- ``` cd / ```
+- ``` ls ```
+- ``` cd /iscsi/iqn.2019-06.com.localnet:filedisk1/tpg1 ```
+- ``` pwd ```
+- ``` acls/ create iqn.2019-06.com.localnet:client1 ```
+- ``` ls ```
+- ``` cd acls/ create iqn.2019-06.com.localnet:client1/ ```
+- ``` pwd ```
+- ``` set auth userid=user1 ```
+- ``` set auth password=password ```
+- ``` cd ../.. ```
+- ```pwd ```
+- ``` ls ```
+- ``` exit ```
 
 
 
