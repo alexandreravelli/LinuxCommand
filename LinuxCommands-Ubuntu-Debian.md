@@ -52,11 +52,18 @@ in progress
 
 -----------------------------------------------------------
 
+**/// neofetch **///
+
+- sudo apt install neofetch
+
+-----------------------------------------------------------
+
+
 **/// How can I install Split Terminator - Multitasking ///**
 
 > Terminator
 
-- apt-get install terminator
+- sudo apt-get install terminator
 
 -----------------------------------------------------------
 
