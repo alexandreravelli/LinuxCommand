@@ -192,7 +192,11 @@ Reload firewaldd
 
 **/// ntp ///**
 
-Install NTP
+Install NTP and configure NTP services
+
+- ``` sudo yum install -y chrony ```
+- ``` sudo systemctl start chronyd ```
+- ``` sudo systemctl enable chronyd ```
 
 - ``` sudo yum install ntp ```
 - ``` sudo systemctl start ntpd ```
@@ -201,7 +205,13 @@ Install NTP
 - ``` sudo firewall-cmd --reload ```
 
 Check ntp's status:
+
 - ``` sudo ntpq -p ```
+
+Configure the chrony server
+
+- ``` sudo vi /etc/chrony.conf ```
+- ``` allow "ipaddress"/24" ```
 
 -----------------------------------------------------------
 
