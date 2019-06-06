@@ -428,10 +428,16 @@ Create access control
 - ``` set auth userid=user1 ```
 - ``` set auth password=password ```
 - ``` cd ../.. ```
-- ```pwd ```
+- ``` pwd ```
 - ``` ls ```
 - ``` exit ```
 
+Configure firewalld
+
+- ``` sudo netstat -at ```
+- ``` sudo netstat -ant ```
+- ``` sudo firewall-cmd --permanent --add-service iscsi-target ```
+- ```sudo firewall-cmd -- relaod ```
 
 
 
