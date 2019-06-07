@@ -26,6 +26,14 @@
 
 -----------------------------------------------------------
 
+**/// Hide or disable a service ///**
+
+- ``` systemctl list-unit-files --type=service ```
+- ``` systemctl stop bluetooth.service ```
+- ``` ssystemctl disable bluetooth.service ```
+
+-----------------------------------------------------------
+
 **/// Limit Who Can Use sudo ///**
 
 Create a group
