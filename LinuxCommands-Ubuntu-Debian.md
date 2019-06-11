@@ -80,3 +80,7 @@ in progress
 - sudo apt install mc
 
 -----------------------------------------------------------
+
+**/// Timeshift Linux ///**
+
+https://www.tecrobust.com/install-timeshift-linux-and-create-backup/
