@@ -55,6 +55,7 @@ in progress
 **/// neofetch ///**
 
 - sudo apt install neofetch
+- cat /proc/version
 
 -----------------------------------------------------------
 
