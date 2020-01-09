@@ -4,6 +4,7 @@ in progress
 
 - sudo apt-get update
 - sudo apt-get upgrade
+- sudo apt dist-upgrade
 
 **/// htop ///**
 
